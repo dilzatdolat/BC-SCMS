@@ -1,0 +1,107 @@
+.material-line {
+  border: none;
+  border-top: 0.1px solid rgb(16, 24, 68);
+  margin: 1px 0;
+  transition: all 0.7s ease; /* 添加过渡效果 */
+}
+
+.material-item {
+  cursor: pointer;
+}
+
+.material-item:hover {
+  background-color: #f5f5f5; /* 鼠标悬停时更改背景颜色 */
+}
+
+.material-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.box-card {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  transition: all 0.3s ease; /* 添加盒子阴影过渡效果 */
+}
+
+.container {
+  margin: 60px;
+}
+
+.el-col {
+  margin-bottom: 10px;
+}
+
+.pie-chart {
+  width: 100%;
+  height: 300px;
+}
+
+/* 添加饼图动画效果 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.pie-chart canvas {
+  animation: fadeIn 0.5s ease; /* 使用动画效果 */
+}
+
+ /* 订单发送*/
+
+ 
+ .material-card {
+  width: 100%; /* 确保卡片占据轮播项的全部宽度 */
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* 为卡片之间添加间距 */
+  color: rgb(0, 0, 0); /* 设置默认字体颜色为#333 */
+}
+  
+  .el-carousel__container {
+    max-width: 800px; /* 根据需要调整最大宽度 */
+    margin: auto; /* 居中轮播 */
+  }
+  
+  .material-card:hover {
+    /* 添加悬停效果 */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .material-card h2 {
+    /* 标题样式 */
+    margin-top: 0;
+    color: #ebe1e1; /* 根据需要调整颜色 */
+  }
+  
+  .material-card p {
+    /* 段落样式 */
+    line-height: 1.6;
+    margin: 10px 0; /* 添加段落之间的间距 */
+  }
+  
+  .order-form {
+    max-width: 400px; /* 调整表单的最大宽度 */
+    margin: 20px auto; /* 表单居中显示 */
+  }
+  
+  .form-item {
+    margin-bottom: 12px; /* 减少表单项之间的间距 */
+  }
+  
+  @media (max-width: 768px) {
+    .order-form {
+      max-width: 100%; /* 在移动设备上调整表单宽度 */
+    }
+  
+    .el-carousel__container {
+      /* 在较小屏幕上调整轮播的最大宽度 */
+      max-width: 100%;
+    }
+  }
